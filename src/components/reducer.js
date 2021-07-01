@@ -117,5 +117,12 @@ export function reducer(state, action) {
             movements: sortedMovement,
         }
     }
+    if (action.type === 'ABOVE_LOAN'){
+        return {
+            ...state, 
+            alert: { status: true, msg: `can't take loan above your balance`, type: 'danger' }
+
+        }
+    }
     return state;
 }

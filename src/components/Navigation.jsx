@@ -35,8 +35,7 @@ function Navigation() {
              
                 currentUser = acc;
                 alertmsg = false;
-                setUserName('');
-                setUserPin('');
+               
                 checkLogging();
             }
 
@@ -46,6 +45,8 @@ function Navigation() {
             // alert('invalid username and password ')
             showAlert();
         }
+        setUserName('');
+        setUserPin('');
     }
     return (
         <>

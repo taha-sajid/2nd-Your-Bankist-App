@@ -1,6 +1,5 @@
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import { UseGlobalContext } from './Context-Api'
-import { currentUser } from './Navigation';
 
 
 export const Balance = () => {

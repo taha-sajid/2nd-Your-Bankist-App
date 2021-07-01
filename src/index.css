@@ -299,6 +299,7 @@ h2 {
   background-image: linear-gradient(to top left, #e52a5a, #ff585f);
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 10px;
   font-size: 2rem;
@@ -456,6 +457,7 @@ h2 {
   .logout {
     padding: 0.1rem 0.2rem;
     border: none;
+    margin-bottom: 1.5rem;
   }
   .btn--sort {
     margin-right: 2rem;
@@ -469,7 +471,7 @@ h2 {
     display: grid;
     align-items: center;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 0.25rem;
     letter-spacing: var(--spacing);
     text-transform: capitalize;

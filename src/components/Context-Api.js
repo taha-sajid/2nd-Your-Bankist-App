@@ -6,10 +6,9 @@ import { reducer } from './reducer';
 
 const initialState = {
     login: false,
-    accounts: accounts,
     currentUser: [],
     movements: [],
-    welcome: `taha`,
+    welcome: `let's get started`,
     balance: 0,
     accounts: accounts,
     alert: { status: false, msg: '', type: '' },
@@ -45,30 +44,34 @@ function AppProvider({ children }) {
     function closeAlert() {
         dispatch({ type: 'CLOSE_ALERT' })
     }
-    function alertSendingMoneyMyself(){
-        dispatch({type: 'SEND_MONEY_MYSELF'})
+    function alertSendingMoneyMyself() {
+        dispatch({ type: 'SEND_MONEY_MYSELF' })
     }
-    function alertAccountNotFound(){
-        dispatch({type: 'ACCOUNT_NOT_FOUND'})
+    function alertAccountNotFound() {
+        dispatch({ type: 'ACCOUNT_NOT_FOUND' })
     }
-    function alertInvalidUserName(){
-        dispatch({type: 'INVALID_USERNAME'});
+    function alertInvalidUserName() {
+        dispatch({ type: 'INVALID_USERNAME' });
     }
-    function alertGreaterAmount(){
-        dispatch({type:'GREATER_AMOUNT'})
+    function alertGreaterAmount() {
+        dispatch({ type: 'GREATER_AMOUNT' })
     }
-    function alertInvalidInput(){
-        dispatch({type: 'INVALID_INPUT'})
+    function alertInvalidInput() {
+        dispatch({ type: 'INVALID_INPUT' })
     }
-    function movementSorted(){
-        dispatch({type:'SORTED_MOVEMENT'})
+    function movementSorted() {
+        dispatch({ type: 'SORTED_MOVEMENT' })
     }
+    function alertAboveLoan() {
+        dispatch({ type: 'ABOVE_LOAN' });
+    }
+
     return <AppContext.Provider value={{
         ...state, checkLogging, logout, updateMovement, checkBalance,
         getLoan, closeAccount, timerLogout, showAlert, closeAlert,
         alertSendingMoneyMyself, alertAccountNotFound, alertInvalidUserName,
-        alertGreaterAmount, alertInvalidInput,movementSorted
-   }}>
+        alertGreaterAmount, alertInvalidInput, movementSorted, alertAboveLoan
+    }}>
         {children}
     </AppContext.Provider>
 }
