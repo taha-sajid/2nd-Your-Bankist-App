@@ -9,7 +9,7 @@ const initialState = {
     accounts: accounts,
     currentUser: [],
     movements: [],
-    welcome: `let's get started`,
+    welcome: `taha`,
     balance: 0,
     accounts: accounts,
     alert: { status: false, msg: '', type: '' },

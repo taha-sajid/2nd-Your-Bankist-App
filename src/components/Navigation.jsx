@@ -53,7 +53,7 @@ function Navigation() {
             <nav>
                 <p className="welcome">{welcome}</p>
                 <img src={logo} alt="Logo" className="logo" />
-                <form className="login">
+            <form className="login">
                     <input
                         type="text"
                         placeholder="user"
